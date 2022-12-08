@@ -1,0 +1,151 @@
+:root {
+    --marine-blue: hsl(213, 96%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --purplish-blue: hsl(243, 100%, 62%);
+    --pastel-blue: hsl(228, 100%, 84%);
+    --lightblue: hsl(206, 94%, 87%);
+    --strawberry-red: hsl(354, 84%, 57%);
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: var(--marine-blue);
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* beginning of sidebar */
+
+.sidebar-img {
+    position: absolute;
+    z-index: -1;
+}
+
+.sidebar {
+    display: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+    /* display: flex; */
+}
+
+.num-step {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#current-page {
+    background-color: var(--pastel-blue);
+    border: 0;
+    color: var(--black);
+}
+
+.step-number {
+    margin-right: 25px;
+    border: 1px solid var(--white);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.step {
+    font-size: 13px;
+    color: var(--white);
+    opacity: .5;
+}
+
+
+/* end of sidebar */
+
+
+/* beginning of content layout */
+
+.content {
+    display: block;
+    margin: 0 20% 0 0;
+}
+
+.content-heading {
+    margin: 50px 0;
+}
+
+
+/* form begins */
+
+.form-input-container {
+    margin-top: 30px;
+}
+
+label {
+    color: var(--marine-blue);
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--marine-blue);
+    background-color: transparent;
+}
+
+.next-btn {
+    float: right;
+    background-color: var(--marine-blue);
+    color: var(--white);
+    font-size: 13px;
+    width: 100px;
+    height: 40px;
+}
+
+.next-btn:hover {
+    background-color: var(--marine-blue);
+    color: var(--white);
+    box-shadow: 2px 3px 5px var(--black);
+    transition: all ease .3s;
+}
+
+
+/* form ends */
+
+
+/* end of content */
+
+
+/* mobile view */
+
+
+/* step 1 */
+
+@media (max-width: 992px) {
+    body {
+        /* background-color: red; */
+    }
+    .sidebar-img {
+        display: block;
+        width: 400px;
+        margin: 0;
+    }
+    .sidebar {
+        display: block;
+    }
+}

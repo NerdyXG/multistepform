@@ -139,8 +139,13 @@ input {
 @media (max-width: 992px) {
     body {
         /* background-color: red; */
+        overflow-y: visible;
     }
     .sidebar {
+        font-size: 13px;
         background-image: url("assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        height: auto;
+        margin: 0;
     }
 }

@@ -26,6 +26,7 @@ body {
 h1 {
     color: var(--marine-blue);
     padding-top: 50px;
+    font-weight: bold;
 }
 
 p {
@@ -141,13 +142,14 @@ input {
         overflow-x: hidden;
     }
     body {
-        /* background-color: red; */
+        background-color: var(--magnolia);
         overflow-y: visible;
         overflow-x: hidden;
     }
     .sidebar-container {
         position: relative;
         z-index: 0;
+        margin-bottom: -125px;
     }
     .sidebar {
         display: flex;
@@ -175,11 +177,18 @@ input {
     /* content */
     .content {
         position: relative;
-        margin: 0 5% 50px;
+        margin: 0 5% 100px;
         z-index: 2;
         background-color: var(--white);
+        border-radius: 15px;
     }
     .content-heading {
+        margin-bottom: 15px;
+    }
+    .content-padding {
+        margin: -80px 5% 20px;
+    }
+    #name {
         margin-top: 0;
     }
 }

@@ -20,13 +20,14 @@ body {
     max-width: 100%;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    overflow: hidden;
+    overflow-x: hidden;
+    color: var(--marine-blue);
 }
 
 h1 {
     color: var(--marine-blue);
     padding-top: 50px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p {
@@ -130,6 +131,45 @@ input {
 
 
 /* end of content */
+
+
+/* step 2 */
+
+.billing-cards {
+    /* justify-content: space-between; */
+    /* height: 350px; */
+}
+
+.card-title {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+p.card-text {
+    font-weight: bold;
+}
+
+.muted-price {
+    font-weight: 400;
+}
+
+.arcade-icon {
+    background-color: rgb(230, 166, 49);
+    padding-top: 9px;
+}
+
+.advanced-icon {
+    background-color: rgb(242, 90, 116);
+    padding-top: 11px;
+}
+
+.pro-icon {
+    background-color: var(--purplish-blue);
+    padding-top: 10px;
+}
 
 
 /* mobile view */

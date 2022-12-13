@@ -231,4 +231,15 @@ p.card-text {
     #name {
         margin-top: 0;
     }
+    /* step two */
+    .card-body {
+        display: flex;
+    }
+    .billing-cards {
+        margin-bottom: 15px;
+    }
+    .card-title {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
 }

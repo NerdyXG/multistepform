@@ -109,7 +109,9 @@
                                     <h5 class="card-title arcade-icon"><img src="icons/joystick-white.png" alt="joystick icon" class=""></h5>
                                     <p class="card-text">
                                         Arcade <br>
-                                        <span class="text-muted muted-price">$9/mo</span>
+                                        <span id="monthlyPriceArcade" class="text-muted muted-price hidden-text">$9/mo</span>
+                                        <span id="yearlyPriceArcade" class="text-muted muted-price">$90/yr</span> <br>
+                                        <span id="yearlyBonusArcade" class="muted-price">2 months free</span>
                                     </p>
                                 </div>
                             </div>
@@ -121,7 +123,9 @@
                                     <h5 class="card-title advanced-icon"><img src="icons/white-gamecontroller.png" alt="gamecontroller icon" style="width:30px; height:30px;"></h5>
                                     <p class="card-text">
                                         Advanced <br>
-                                        <span class="text-muted muted-price">$12/mo</span>
+                                        <span id="monthlyPriceAdvanced" class="text-muted muted-price hidden-text">$12/mo</span>
+                                        <span id="yearlyPriceAdvanced" class="text-muted muted-price">$120/yr</span> <br>
+                                        <span id="yearlyBonusAdvanced" class="muted-price">2 months free</span>
                                     </p>
                                 </div>
                             </div>
@@ -133,7 +137,9 @@
                                     <h5 class="card-title pro-icon"><img src="icons/xbox-white.png" alt="xbox icon" style="width: 30px; height: 30px;" class=""></h5>
                                     <p class="card-text">
                                         Pro <br>
-                                        <span class="text-muted muted-price">$15/mo</span>
+                                        <span id="monthlyPricePro" class="text-muted muted-price hidden-text">$15/mo</span>
+                                        <span id="yearlyPricePro" class="text-muted muted-price">$150/yr</span> <br>
+                                        <span id="yearlyBonusPro" class="muted-price">2 months free</span>
                                     </p>
                                 </div>
                             </div>
@@ -142,11 +148,20 @@
 
 
                     <div class="period-checkbox mt-5">
-                        Monthly
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label> Yearly
+                        <div class="period-checkbox-content">
+                            <span id="monthly" class="text-muted">Monthly</span>
+                            <label class="switch">
+                                <input type="checkbox" id="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <span id="yearly">Yearly</span>
+                        </div>
+                    </div>
+
+
+                    <div class="next-and-prev mt-4">
+                        <a href="index.html" class="prev-link text-muted">Go back</a>
+                        <div class=" btn next-btn ">Next</div>
                     </div>
 
                     <!-- Step 1 end -->
@@ -190,10 +205,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 " crossorigin="anonymous "></script>
     </div>
 
+    <script src="script.js "></script>
+
 </body>
 
 <!-- <footer>
-    <a target="_blank" href="https://icons8.com/icon/bgcDOSDKAuGQ/apple-arcade">Apple Arcade</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank " href="https://icons8.com/icon/bgcDOSDKAuGQ/apple-arcade ">Apple Arcade</a> icon by <a target="_blank " href="https://icons8.com ">Icons8</a>
 </footer> -->
 
 </html>

@@ -201,6 +201,13 @@ p.card-text {
     cursor: pointer;
 }
 
+.prev-link:hover {
+    color: var(--marine-blue);
+    font-weight: bold;
+    opacity: 1;
+    transition: all ease 300ms;
+}
+
 
 /* togglebox styles */
 

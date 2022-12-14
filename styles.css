@@ -136,9 +136,18 @@ input {
 
 /* step 2 */
 
-.billing-cards {
-    /* justify-content: space-between; */
-    /* height: 350px; */
+.billing-cards:hover {
+    cursor: pointer;
+    border: 1px solid var(--purplish-blue);
+    background: var(--magnolia);
+    transition: all ease 300ms;
+}
+
+.clicked-price {
+    cursor: pointer;
+    border: 1px solid var(--purplish-blue);
+    background: var(--magnolia);
+    transition: all ease 300ms;
 }
 
 .card-title {
@@ -196,9 +205,15 @@ p.card-text {
     display: none;
 }
 
+.next-and-prev {
+    display: flex;
+    justify-content: space-between;
+}
+
 .prev-link {
     text-decoration: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .prev-link:hover {

@@ -1,16 +1,4 @@
-// function period() {
-// var month = document.getElementsByClassName("monthly");
-// var year = document.getElementsByClassName("yearly");
-
-// month.classList.toggle("text-muted");
-// year.classList.toggle("text-muted");
-// }
-
-// let checkbox = document.getElementsByClassName("switch");
-// console.log(checkbox.checked);
-
-
-
+// code for month vs year billing plans
 var monthly = document.getElementById("monthly");
 var yearly = document.getElementById("yearly");
 
@@ -64,3 +52,31 @@ checkbox.addEventListener("change", function() {
         yearlyBonusPro.classList.toggle("hidden-text");
     }
 })
+
+
+// clickable card
+
+var clickedCardArcade = document.getElementById("clickedCardArcade");
+var clickedCardAdvamced = document.getElementById("clickedCardAdvanced");
+var clickedCardPro = document.getElementById("clickedCardPro");
+var billingCards = document.querySelectorAll(".billing-cards");
+
+clickedCardArcade.addEventListener("click", function() {
+    clickedCardArcade.classList.add("clicked-price");
+    clickedCardAdvanced.classList.remove("clicked-price");
+    clickedCardPro.classList.remove("clicked-price");
+})
+
+clickedCardAdvanced.addEventListener("click", function() {
+    clickedCardArcade.classList.remove("clicked-price");
+    clickedCardAdvanced.classList.add("clicked-price");
+    clickedCardPro.classList.remove("clicked-price");
+})
+
+clickedCardPro.addEventListener("click", function() {
+    clickedCardArcade.classList.remove("clicked-price");
+    clickedCardAdvanced.classList.remove("clicked-price");
+    clickedCardPro.classList.add("clicked-price");
+})
+
+// end of clickable cards
